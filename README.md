@@ -20,7 +20,6 @@ The current StitchFix ETL work assignment setup to perform the following:
 - When you create a new AWS account, you have the option of also creating an admin role for that new account.  This provider.tf is leveraging that role within the AWS Organization I am using for this work assignment.  Other inactive options within the provider.tf include assigning access via "AWS_PROFILE" key/secret
 - AWS Secrets manager has a deletion window of 0.  If this were anything more than a take home assignment that value would be increased.
 - Specific subnets within each of the two VPC's for peering were not specified.  Since
-- typically, you don’t include state file(s) with your git commits.  Those are better suited to be stored in S3.  Since this is a take home assignment, I have included the state file to supplement verification.
 - Since there was no mention of an EC2 instance in the work assignment, only the subnets where the primary and replica database live were added to the VPC peering connection.
 - To be cost effective only a single NAT Gateway is being used for all of the private subnets.
 - To be security concious, no NAT Gateway has been deployed with the database subnets.  There should be no reason your DB's call out to the internet.
