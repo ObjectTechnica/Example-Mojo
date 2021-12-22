@@ -28,7 +28,7 @@ The current StitchFix ETL work assignment setup to perform the following:
     - You cannot interact with the S3 bucket if you cannot assume the role
 
 ## Architecture Exceptions
-- Secrets Manager username and password are visible in state file.  This is an open issue with hashicorp.  Available work aroundis to tightly control your remote state backend, and enforce encryption.
+- Secrets Manager username and password are visible in state file.  This is an open issue with hashicorp.  Available work around is to tightly control your remote state backend, and enforce encryption.
 ```
 https://github.com/hashicorp/terraform/issues/516
 ```
