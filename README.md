@@ -29,6 +29,10 @@ The current StitchFix ETL work assignment setup to perform the following:
     - You cannot interact with the S3 bucket if you cannot assume the role
 
 ## Architecture Exceptions
+- Secrets Manager username and password are visible in state file.  This is an open issue with hashicorp.  Available work aroundis to tightly control your remote state backend, and enforce encryption.
+```
+https://github.com/hashicorp/terraform/issues/516
+```
 - Known issues when dealing with AWS RDS and Terraform
 when running a destroy the RDS instances will throw errors these are documented issues via Hashicorp
  the "skip_final_snaphot" and the "final_snapshot_identifier" never get read in properly and destroys fail.  we can add the replica manually, destroy the instances manually or skip the replica creation and increate backup retentions on primary.  This issue is still open and pending.
