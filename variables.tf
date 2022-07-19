@@ -3,7 +3,7 @@
 #
 variable "master_id" {
   description = "The 12-digit account ID used for role assumption"
-  default     = "400293920032"
+  default     = "12345678901"
 }
 
 variable "region" {
@@ -137,7 +137,7 @@ variable "jira_db_admin" {
 
 variable "jira_db_passwd" {
   description = "The admin password"
-  default     = "Adminmeplease1!"
+  default     = "SomePassword"
 }
 
 variable "db_encrypted" {
@@ -174,7 +174,7 @@ variable "backup_window" {
 #
 variable "kms_description" {
   description = "Unique identifier for this KMS key"
-  default     = "Atlassian KMS Key"
+  default     = "Some KMS Key"
 }
 
 variable "key_usage" {
@@ -222,7 +222,7 @@ variable "pw_override" {
 #
 variable "bucket_name" {
   description = "A globally unique bucket name"
-  default     = "stitchfix-demo-adam-etl-location"
+  default     = "example-demo-adam-etl-location"
 }
 
 variable "s3_acl" {
