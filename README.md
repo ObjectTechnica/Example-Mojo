@@ -1,10 +1,9 @@
-# StitchFix ETL work assignment
-## _Prove I can do what I say I can do, and keep security in mind_
+# Example ETL work assignment
 
 [![N|Solid](https://hashicorp.github.io/field-workshops-terraform/slides/aws/terraform-cloud/images/tf_aws.png)](https://hashicorp.github.io/field-workshops-terraform/slides/aws/terraform-cloud/images/tf_aws.png)
 
 ## Terraform approach
-The current StitchFix ETL work assignment setup to perform the following:
+The current Example ETL work assignment setup to perform the following:
 - In the same AWS region, create 2 VPCs with the S3 Gateway endpoint enabled. 
 - VPC peering should allow private connectivity between the two VPCs.
 - Create a Postgres leader instance in VPC1 and a replica/follower instance in VPC2.
